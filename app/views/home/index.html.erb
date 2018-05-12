@@ -1,2 +1,32 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="columns is-desktop">
+    <div class="column"></div>
+    <div class="column is-three-quarters-desktop">
+
+        <section>
+            <div class="container">
+                <div class="content">
+                    <p class="has-text-grey has-text-centered is-size-5">
+                        We are the railway and construction security specialist in Malaysia.
+                        <br> We have a
+                        <a href="#projects">proven record</a> of successfully secured projects
+                        <br> And a long list of
+                        <a href="#clients">satisfied customers</a>.
+                        <br>
+                        <a href="#contact">Get in touch today</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <%= render "mission_card" %>
+        <%= render "who_card" %>
+        <%= render "clients_card" %>
+        <%= render "projects_card" %>
+        <%= render "fts_card" %>
+        <%= render "contact_card" %>
+
+
+    </div>
+    <div class="column"></div>
+</div>

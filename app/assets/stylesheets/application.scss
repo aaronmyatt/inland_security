@@ -13,4 +13,10 @@
  *= require_tree .
  *= require_self
  */
- @import "bulma";
+ @import "bulma/bulma.sass";
+ @import "bulma-extensions/bulma-divider/dist/bulma-divider.sass";
+ @import "home";
+
+ .navbar > div.container {
+     width: auto;
+ }

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && rails s"
+    image: inland
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    tty: true
+    stdin_open: true
+    environment:
+      RAILS_ENV: development
